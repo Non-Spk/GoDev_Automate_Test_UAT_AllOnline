@@ -20,4 +20,8 @@ check_store_detail
     main_menu_page.check_store_detail    ${store['code']}    ${store['title']}
 
 
-    
+login
+    login_feature.prelogin
+    login_feature.login_cpall
+    login_feature.login_storecode
+    login_feature.check_store_detail

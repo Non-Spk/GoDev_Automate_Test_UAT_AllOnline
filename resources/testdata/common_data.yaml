@@ -5,3 +5,8 @@ user_cpall:
 store:
   code: "11000"
   title: ติวานนท์ 4 แยก 1
+
+member:
+  old:
+    telephone: "0859009940"
+    otp: "111111"
