@@ -6,8 +6,9 @@ device:
   platform_version: "16"
   device_name: emulator-5554
 
-app_path:
+app:
   apk: D:\GoDev\project\UAT_All_Online\builds\ALL_ONLINE_STOREAPP_UAT_release_01.05.1304.apk
   package: th.co.gosoft.allonline.uat
   activity: th.co.gosoft.allonline.presentation.splashscreen.SplashScreenActivity
   permission: True
+  version: 01.05.1304-uat

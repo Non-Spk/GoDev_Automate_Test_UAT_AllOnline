@@ -38,5 +38,13 @@ tap_element
     AppiumLibrary.Tap With Positions    500    @{positions}
 
 
-# qcmmmop@7eleven.cp.co.th
-# $upp0rt33_309
+type_text
+    [Arguments]    ${locator}    ${text}    ${timeout}=30s
+    AppiumLibrary.Wait until page contains element    ${locator}    ${timeout}
+    AppiumLibrary.Input text    ${locator}    ${text}
+
+
+type_password
+    [Arguments]    ${locator}    ${text}    ${timeout}=30s
+    AppiumLibrary.Wait until page contains element    ${locator}    ${timeout}
+    AppiumLibrary.Input password    ${locator}    ${text}
