@@ -1,5 +1,5 @@
 *** Variables ***
-&{menu_member}
+&{menu_member_locator}
 ...    ctn_menu_member=xpath=//android.view.ViewGroup[@resource-id="th.co.gosoft.allonline.uat:id/viewMenuMember"]
 ...    btn_telephone=xpath=//android.view.ViewGroup[@resource-id="th.co.gosoft.allonline.uat:id/btnTelephone"]
 ...    txt_telephone=xpath=//android.widget.EditText[@resource-id="th.co.gosoft.allonline.uat:id/editTextTelephone"]
