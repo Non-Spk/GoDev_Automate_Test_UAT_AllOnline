@@ -26,6 +26,10 @@ check_text_in_element
     Should Contain    ${actual_text}    ${expected_text}
 
 
+wait_until_element_invisible
+    [Arguments]    ${locator}    ${timeout}=30s
+    AppiumLibrary.Wait Until Page Does Not Contain Element    ${locator}    ${timeout}
+
 tap_element
     [Arguments]    ${locator}    ${timeout}=30s
     AppiumLibrary.Wait until page contains element    ${locator}    ${timeout}
@@ -48,3 +52,9 @@ type_password
     [Arguments]    ${locator}    ${text}    ${timeout}=30s
     AppiumLibrary.Wait until page contains element    ${locator}    ${timeout}
     AppiumLibrary.Input password    ${locator}    ${text}
+
+
+press_enter
+    [Arguments]    ${locator}
+    common.tap_element    ${locator}
+    AppiumLibrary.Press keycode    66
