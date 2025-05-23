@@ -19,7 +19,7 @@ check_goto_home
     home_page.check_content_home
 
 signin_with_old_member
-    shopping_telephone_feature.select_shopping
-    shopping_telephone_feature.enter_member    ${member['old']['telephone']}
-    shopping_telephone_feature.enter_otp    ${member['old']['otp']}
-    shopping_telephone_feature.check_goto_home
+    shopping_feature.select_shopping
+    shopping_feature.enter_member    ${member['old']['telephone']}
+    shopping_feature.enter_otp    ${member['old']['otp']}
+    shopping_feature.check_goto_home
